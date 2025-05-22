@@ -9,10 +9,12 @@ import Cart from './pages/user/Cart';
 import Checkout from './pages/user/Checkout';
 import AdminDashboard from './pages/admin/AdminDashboard';
 import ProductManagement from './pages/admin/ProductManagement';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <Router>
+      <Navbar />
       <Routes>
         {/* User Routes */}
         <Route path='/' element={<Home />}/>
